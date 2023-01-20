@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  --main-color: rgb(35, 202, 152);
+  --second-color: rgb(110, 119, 127);
+  --background-color: rgb(248, 249, 250);
+  --bord-rad: 2.25rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+.clear {
+  clear: both;
+}
+@font-face {
+  font-family: alaa;
+  src: url(../webfonts/Sevillana-Regular.ttf);
+}
+@media screen and (max-width: 768px) {
+  #home {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nav h3 {
+    margin-bottom: 30px;
+  }
+  .nav-links ul,
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .content-header {
+    text-align-last: start;
+  }
+  .main-service {
+    display: block;
+  }
+}
+::selection {
+  color: white;
+  background: var(--main-color);
+}
+@keyframes typing {
+  0% {
+    content: " |";
+  }
+  3% {
+    content: " D|";
+  }
+  5% {
+    content: " De|";
+  }
+  8% {
+    content: " Des|";
+  }
+  11% {
+    content: " Desi|";
+  }
+  13% {
+    content: " Desig|";
+  }
+  15% {
+    content: " Design|";
+  }
+  17% {
+    content: " Designer|";
+  }
+  19% {
+    content: " Design|";
+  }
+  21% {
+    content: " Desig|";
+  }
+  23% {
+    content: " Desi|";
+  }
+  25% {
+    content: " Des|";
+  }
+  27% {
+    content: " De|";
+  }
+  29% {
+    content: " D|";
+  }
+
+  31% {
+    content: " Si|";
+  }
+  33% {
+    content: " Sim|";
+  }
+  35% {
+    content: " Simo|";
+  }
+  37% {
+    content: " Simon|";
+  }
+  39% {
+    content: " Simon ol|";
+  }
+  41% {
+    content: " Simon oli|";
+  }
+  43% {
+    content: " Simon olivial|";
+  }
+  45% {
+    content: " Simon oli|";
+  }
+  47% {
+    content: " Simon ol|";
+  }
+  49% {
+    content: " Simon o|";
+  }
+  51% {
+    content: " Simon |";
+  }
+  53% {
+    content: " Simo|";
+  }
+  55% {
+    content: " Si|";
+  }
+  57% {
+    content: " |";
+  }
+
+  59% {
+    content: " ph|";
+  }
+  61% {
+    content: " phot|";
+  }
+  63% {
+    content: " photog|";
+  }
+  65% {
+    content: " photogr|";
+  }
+  67% {
+    content: " photogra|";
+  }
+  69% {
+    content: " photograph|";
+  }
+  71% {
+    content: " photographer|";
+  }
+  73% {
+    content: " photograph|";
+  }
+  75% {
+    content: " photogra|";
+  }
+  77% {
+    content: " photogr|";
+  }
+  79% {
+    content: " photog |";
+  }
+  81% {
+    content: " phot|";
+  }
+  83% {
+    content: " ph|";
+  }
+  85% {
+    content: " |";
+  }
+
+  87% {
+    content: " fr|";
+  }
+  89% {
+    content: " free|";
+  }
+  90% {
+    content: " free L|";
+  }
+  91% {
+    content: " free Lan|";
+  }
+  92% {
+    content: " Free Lance|";
+  }
+  93% {
+    content: " Free Lancer|";
+  }
+  94% {
+    content: " photographer|";
+  }
+  95% {
+    content: " Free Lance|";
+  }
+  96% {
+    content: " free Lan|";
+  }
+  97% {
+    content: " free L|";
+  }
+  98% {
+    content: " free |";
+  }
+  99% {
+    content: " fr|";
+  }
+  100% {
+    content: " ph|";
+  }
+}
+/* CSS border*/
+.content-header a,
+.about-right a,
+.button {
+  align-items: center;
+  appearance: none;
+  border: 2px solid var(--main-color);
+  border-radius: var(--bord-rad);
+  /* box-shadow: var(--main-color) 0 2px 4px, var(--main-color) 0 7px 13px -3px, */
+  /* var(--main-color) 0 -3px 0; */
+  box-sizing: border-box;
+  color: var(--main-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  /* padding-left: 25px;
+  padding-right: 16px; */
+  padding: 30px;
+  width: 10rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  transition: 1s;
+}
+
+.content-header a:focus,
+.about-right a:focus {
+  box-shadow: var(--main-color) inset 0 0 0 1.5px, var(--main-color) 0 2px 4px,
+    var(--main-color) 0 7px 13px -3px, var(--main-color) inset 0 -3px 0;
+}
+
+.content-header a:hover,
+.about-right a:hover {
+  /* box-shadow: var(--main-color) 0 4px 8px, var(--main-color) 0 7px 13px -3px,
+    var(--main-color) 0 -3px 0; */
+  /* transform: translateY(-2px); */
+  color: white;
+  background-color: rgb(11, 226, 176);
+}
+
+.content-header a:active,
+.about-right a:active {
+  box-shadow: var(--main-color) 0 3px 7px;
+  transform: translateY(2px);
+}
+/* background h1*/
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin: 8rem auto;
+  font-size: 4rem;
+}
+.title::before {
+  content: "about me";
+  height: 5rem;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: -1;
+  font-size: 10rem;
+  transform: translate(-209px, -56px);
+}
+.title::after {
+  content: "";
+  border: 2px solid var(--main-color);
+  width: 8rem;
+  bottom: 7px;
+  position: absolute;
+  right: 45%;
+}
+/**/
+.service::before {
+  content: "service";
+}
+/**/
+.res::before {
+  content: "Summary";
+}
+
+/* Style input */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px var(--main-color), 0px 0px 1px var(--main-color);
+  background: var(--main-color);
+  border-radius: 1.3px;
+  border: 0.2px solid var(--main-color);
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: var(--main-color);
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px var(--main-color), 0px 0px 1px var(--main-color);
+  background: var(--main-color);
+  border-radius: 1.3px;
+  border: 0.2px solid var(--main-color);
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid var(--main-color);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px var(--main-color), 0px 0px 1px var(--main-color);
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: var(--main-color);
+}
+input[type="range"]::-ms-fill-upper {
+  background: var(--main-color);
+  border: 0.2px solid var(--main-color);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px var(--main-color), 0px 0px 1px var(--main-color);
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: var(--main-color);
+}
+.portfolio::before {
+  content: "portfolio";
+}
+.cl::before {
+  content: "TESTIMONIAL";
+  transform: translate(-291px, -56px);
+}
+.co::before {
+  content: "CONTACT";
+  transform: translate(-158px, -56px);
+}

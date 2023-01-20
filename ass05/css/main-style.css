@@ -1,0 +1,596 @@
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../photo/ass502.jpg);
+  /* background-position: center; */
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  align-items: center;
+}
+nav img {
+  width: 100%;
+}
+.nav-links .active {
+  color: var(--main-color);
+}
+.nav-links ul {
+  display: flex;
+  gap: 1rem;
+  padding-left: 16rem;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.layer {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: aliceblue;
+  top: 0;
+  border-left-style: solid;
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin: auto;
+}
+.content-header {
+  position: absolute;
+  color: white;
+  width: 65%;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.content-header h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  font-family: alaa;
+}
+.content-header h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+}
+.content-header h1::after {
+  content: " | ";
+  animation-name: typing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.content-header p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding-bottom: 2.5rem;
+}
+/* Start about*/
+.content-about {
+  display: flex;
+  align-items: center;
+  text-align-last: start;
+  line-height: 30px;
+  justify-content: space-around;
+}
+.content-about h2 {
+  padding-bottom: 15px;
+}
+.content-about h2 span {
+  color: var(--main-color);
+}
+.about-right span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.about-right a {
+  background-color: var(--main-color);
+  color: white;
+  margin-top: 1rem;
+}
+.about-Down {
+  display: flex;
+  align-items: center;
+  text-align-last: start;
+  line-height: 30px;
+  justify-content: space-around;
+  margin: 3rem;
+  position: relative;
+}
+.about-Down span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--second-color);
+  padding-bottom: 1rem;
+}
+.about-Down div::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 1px;
+  border-right: 2px dotted var(--second-color);
+}
+.about-Down div::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  top: auto;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 1px dotted #e0dede;
+  position: absolute;
+}
+/* What We Do*/
+#what-do {
+  margin: 5rem auto;
+  background-color: var(--background-color);
+  position: relative;
+  z-index: -2;
+  padding-top: 25px;
+}
+.main-service {
+  display: float;
+}
+.service-content {
+  display: float;
+  margin-bottom: 20px;
+  overflow: hidden;
+  counter-increment: count;
+}
+
+/**/
+.do-content {
+  margin: 1rem auto;
+  background-color: var(--background-color);
+  position: relative;
+  z-index: -2;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+#what-do {
+  margin: 5rem auto;
+  background-color: var(--background-color);
+  z-index: -2;
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+  counter-increment: count;
+}
+.one {
+  padding: 10px;
+  width: 600px;
+  float: left;
+}
+.user {
+  background-color: white;
+  width: 50px;
+  margin-right: 20px;
+  margin-top: 3rem;
+  float: left;
+  color: var(--main-color);
+  font-size: 37px;
+  text-align: center;
+}
+
+.one {
+  position: relative;
+}
+.one h3 {
+  padding-bottom: 1rem;
+  letter-spacing: 3px;
+}
+.one p {
+  line-height: 28px;
+  color: var(--second-color);
+  /* letter-spacing: 1px; */
+}
+/*كده انت عملتها بكلاس وحطيت له التنسيقات دي كلها لكن بالعنصر الوهمي افضل*/
+/* .pipline {
+  /*
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: blue;
+}*/
+
+.one::after {
+  content: counter(count);
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: blue;
+}
+.one::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: white;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent green transparent transparent;
+}
+
+/* Section Resume*/
+#resume {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+.left,
+.right {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: var(--bord-rad);
+}
+.res-content {
+  display: flex;
+  justify-content: space-around;
+  line-height: 36px;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.res-content span {
+  color: white;
+  background: var(--main-color);
+  border-radius: var(--bord-rad);
+  padding: 10px;
+}
+.res-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.res-content .red {
+  color: red;
+  letter-spacing: 2px;
+  font-size: 19px;
+}
+/* ================================== */
+.skills {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.count p {
+  margin-bottom: 15px;
+}
+.present {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.ones {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 3rem;
+}
+.range {
+  width: 100%;
+}
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+  margin-bottom: 2rem;
+}
+.anchor {
+  margin-top: 3rem;
+
+  left: 50%;
+  right: 50%;
+  text-align: center;
+}
+#resume a {
+  border: 1px solid var(--second-color);
+  border-radius: var(--bord-rad);
+  text-align: center;
+  padding: 1rem;
+  color: var(--second-color);
+  text-decoration: none;
+  transition: 1s;
+}
+#resume a:hover {
+  background-color: var(--second-color);
+  color: white;
+}
+
+/* portfolio */
+.port-header {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.active2 {
+  color: var(--main-color);
+  position: relative;
+  margin-bottom: 3rem;
+}
+.active2::after {
+  content: "";
+  border: 2px solid var(--main-color);
+  width: 3rem;
+  position: absolute;
+  right: -48%;
+  bottom: -1rem;
+}
+.photo {
+  display: flex;
+  width: 90%;
+  gap: 3.5rem;
+  margin: auto;
+}
+.first img {
+  width: 100%;
+  border-radius: 15px;
+}
+.layer-p {
+  position: relative;
+  font-weight: bold;
+}
+.hover-i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 6.5rem;
+  color: white;
+  opacity: 0;
+  transition: 1s;
+}
+.layer-p:hover .hover-i {
+  opacity: 1;
+}
+.layer-p:hover img {
+  background-position: 0 50%;
+}
+/* .layer-p:hover .hover-i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 2.5rem;
+} */
+.second {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.test {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.test-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: var(--background-color);
+  padding: 25px;
+  cursor: pointer;
+}
+.test-col img {
+  height: 77px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.test-col p {
+  padding: 0;
+}
+.test-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+.test-img {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.test-col i {
+  color: rgb(255, 193, 7);
+}
+
+/* contact */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  background-color: var(--background-color);
+  padding: 5rem 0;
+  padding-left: 2rem;
+
+}
+.follow {
+  padding-top: 1.5rem;
+}
+.contact-left {
+  color: var(--second-color);
+  line-height: 2rem;
+}
+.contact-left i {
+  color: var(--main-color);
+  padding-right: 1rem ;
+}
+.contact-left h3 {
+  padding-bottom: 1rem;
+  color: black;
+}
+.before-last {
+  padding-top: 55px;
+}
+.container8 {
+  width: 60%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.before-last .header8 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  position: relative;
+}
+.before-last .contact .header8::before {
+  content: "";
+  border-top: 1px solid red;
+  width: 36%;
+  height: 2px;
+  bottom: -26px;
+  padding-top: 12px;
+  position: absolute;
+  right: 32%;
+}
+.before-last .header8::after {
+  content: "";
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+  border-spacing: 3px;
+  width: 20%;
+  height: 2px;
+  bottom: -17px;
+  padding-top: 8px;
+  position: absolute;
+  right: 40%;
+}
+.rwo {
+  display: flex;
+  gap: 6rem;
+  position: relative;
+}
+input[type="text"],
+[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  margin-top: 1rem;
+  border: 2px solid var(--main-color);
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: -7;
+  overflow: hidden;
+  width: 10rem;
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 1s;
+}
+input[type="submit"]:hover {
+  color: white;
+  background-color: rgb(11, 226, 176);
+}
+.types {
+  text-align: center;
+}
+
+/* last-section */
+.latest {
+  background-color: #333333;
+  color: white;
+}
+.container-last {
+  width: 50%;
+  height: 300px;
+  margin: auto;
+}
+.icon-last {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  padding-left: 28%;
+}
+.last {
+  padding-top: 27%;
+  padding-left: 30%;
+}
+.latest p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+.latest a {
+  color: red;
+  text-decoration: none;
+}
+input {
+  border-radius: 10px;
+  transition: 1s;
+}
+input:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+textarea {
+  border-radius: 10px;
+  transition: 1s;
+}
+textarea:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content:space-around;
+  width: 80%;
+  margin: 5rem;
+}
